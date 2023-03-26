@@ -54,8 +54,8 @@ function createPostDiv(item) {
   //დატა ატრიბუტის ამოღება და ცვლადში შენახვა- დივის ქლიქ ივენთი
 
   divWrapper.addEventListener("click", function (event) {
-    console.log(event.target);
-    let divId = event.target.getAttribute("data-id");
+    console.log(event.currentTarget);
+    let divId = event.currentTarget.getAttribute("data-id");
     console.log(divId);
 
     overlay.classList.add("overlayActive");
